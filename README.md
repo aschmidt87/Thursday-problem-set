@@ -58,6 +58,10 @@ print(g)
 
 if s < e and s < g:
     print("Spanish!")
+elif g < e and g < s:
+    print('German!')
+else:
+    print('English')
 
     
 
