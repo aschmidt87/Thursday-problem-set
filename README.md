@@ -1,5 +1,5 @@
 # Thursday-problem-set
-Code and prediction for Thursday problem set
+
 def languagefrequency(filename):
     with open(filename, encoding = 'utf-8') as file_object:
         contents = file_object.read()
@@ -23,10 +23,8 @@ def languagefrequency(filename):
         most_frequent[word] = most_frequent[word]/len(sorted_counts)
     
     return most_frequent
-    
-    for key, value in most_frequent.keys():
-        print((key,value))
-    
+
+
 english = languagefrequency('eaton-boy-scouts_EN.txt')
 spanish = languagefrequency('cherbonnel-mi-tio_SP.txt')
 german = languagefrequency('schloemp-tolle-koffer_DE.txt')
@@ -57,6 +55,9 @@ for u in unknown.keys():
     g = germ + g
     
 print(g)
+
+if s < e and s < g:
+    print("Spanish!")
 
     
 
